@@ -1,0 +1,187 @@
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 92px;
+}
+
+@mixin carta($altura: var.$height-card) {
+    width: var.$width-card;
+    height: $altura;
+    background-color: var.$primary;
+}
+
+@mixin info-card($font-size: var.$font-size-default-infoCard) {
+    margin-top: var.$margin-top-infoCard;
+    margin-bottom: var.$margin-bottom-infoCard;
+    height: var.$line-height-infoCard;
+}
+
+@mixin card-responsive($height-card: 195px){
+    width: 300px;
+    height: $height-card;
+}
+
+
+.card {
+    width: var.$width-card;
+    height: var.$height-card;
+    background-color: var.$primary-light;
+
+
+    width: var.$width-card;
+    height: var.$height-card;
+    box-shadow: var.$box-shadow-card;
+    margin-top: var.$margin-top-card;
+}
+
+.card-header {
+    //@include carta($altura: var.$height-headerC);
+
+    width: var.$width-card;
+    height: var.$height-headerC;
+    background-color: var.$primary-light;
+
+    display: flex;
+    flex-direction: row;
+}
+
+$primary: #D8C732;
+$primary-light: #F7E43C;
+$primary-dark: #4B2C20;
+$secundary: #7E2D2D;
+$secundary-light: #BB4545;
+$secundary-dark: #531E1E;
+$text_primary: #BB4545;
+$text_secondary: #000000;
+$text_card: #ffffff;
+
+.h1-card {
+    color: var.$secundary;
+    margin-left: 18px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.card-titulo {
+    line-height: var.$line-height-tituloC;
+}
+
+.card-multimedia {
+    //@include carta($altura: var.$height-headerC);
+
+
+    width: var.$width-card;
+    height: var.$height-headerC;
+    background-color: var.$primary-light;
+}
+
+.card-info {
+    //@include carta($altura: var.$height-headerC);
+    width: var.$width-card;
+    height: var.$height-headerC;
+    background-color: var.$primary-light;
+
+    //@include info-card;
+    margin-top: var.$margin-top-infoCard;
+    margin-bottom: var.$margin-bottom-infoCard;
+    height: var.$line-height-infoCard;
+}
+
+.text-card {
+    font-family: 'Kanit', sans-serif;
+    color: var.$text_secondary;
+    line-height: var.$line-height-textC;
+    font-size: var.$font-size-textC;
+    margin-left: 22px;
+}
+
+.card-botonera {
+   //@include carta($altura: var.$height-headerC);
+   width: var.$width-card;
+   height: var.$height-headerC;
+   background-color: var.$primary-light;
+
+    align-items: center;
+}
+
+.img-multimedia {
+    width: var.$width-imgC;
+    height: var.$height-imgC;
+}
+
+.button-nav {
+    width: var.$width-buttonC;
+    height: var.$height-buttonC;
+    background-color: var.$secundary-dark;
+    color: var.$secundary-light;
+    margin-left: 18px;
+}
+
+.icon-card {
+    width: var.$width-iconC;
+    height: var.$height-iconC;
+    border-radius: var.$border-radius-iconC;
+    margin-top: var.$margin-top-iconC;
+    margin-left: var.$margin-top-iconC;
+}
+
+
+@media (max-width: 694px){
+    .card{
+      width: 300px;
+      height: 540px;
+    }
+    .flex-container>div>div>img{
+      width: 300px;
+      height: 195px;
+  }
+  
+  .flex-container>div>div>p{
+    margin-top: 160px;
+    line-height: 20px;
+    font-size: 15px;
+  }
+  
+  .flex-container>div>div{
+      width: 300px;
+      height: 70px;
+  }
+  
+  .button-nav{
+    width:273px; 
+    height:75px;
+    margin-left: 14px;
+  }
+  
+  .icon-card {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-top: 30%;
+    margin-left: 30%;
+  }
+  
+  .text-card{
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+  .botonera{
+    align-items: center;
+    height: 12px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+   }
+
+   .card-info{
+    margin-top: 0px;
+   }
+  
+   h1{
+    font-size: 27px;
+   }
+   h4{
+    font-size: 12px;
+   }
+  }

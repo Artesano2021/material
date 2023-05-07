@@ -1,0 +1,42 @@
+//@use "@material/dialog";
+@use "variables" as var;
+
+//@include dialog.core-styles;
+
+@import "navbar";
+@import "card";
+@import "footer";
+
+
+
+body {
+    background-color: var.$secundary;
+    margin:0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    color: var.$secundary;
+}
+
+
+h2{
+    font-family: 'Quicksand', sans-serif;
+    color: var.$text_card;
+}
+
+
+h3 {
+    margin-left: var.$margin-left-h3;
+    color: var.$text_secondary;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a{
+    color: var.$text_card;
+}
+
+p{
+    font-family: 'Kanit', sans-serif;
+}
