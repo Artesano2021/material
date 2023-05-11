@@ -1,0 +1,111 @@
+//@use "@material/dialog";
+@use "variables" as var;
+
+//@include dialog.core-styles;
+
+@import "navbar";
+@import "card";
+@import "footer";
+
+
+
+body {
+    background-color: var.$secundary;
+    margin:0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    color: var.$secundary;
+}
+
+
+h2{
+    font-family: 'Quicksand', sans-serif;
+    color: var.$text_card;
+}
+
+
+h3 {
+    margin-left: var.$margin-left-h3;
+    color: var.$text_secondary;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a{
+    color: var.$text_card;
+}
+
+p{
+    font-family: 'Kanit', sans-serif;
+}
+
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fuentes/MaterialIconsOutlined-Regular.otf); 
+    src: url(./fuentes/MaterialIcons-Regular.ttf);
+    src: local('Material Icons'),local('MaterialIcons-Regular'),
+  }
+
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: var.$text_card;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+
+  .lupa{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: var.$secundary-light;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+  .lupa:hover{
+    color: var.$secundary-dark;
+  }
+  

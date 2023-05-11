@@ -1,0 +1,6 @@
+@use './material-components-web';
+@use "@material/banner/styles";
+
+.my-banner {
+    @include banner.position-centered;
+  }
