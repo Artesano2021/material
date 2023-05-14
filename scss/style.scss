@@ -6,6 +6,9 @@
 @import "navbar";
 @import "card";
 @import "footer";
+@import "modal";
+@import "implementaciones";
+
 
 
 
@@ -41,6 +44,9 @@ p{
     font-family: 'Kanit', sans-serif;
 }
 
+b{
+  font-family: 'Kanit', sans-serif;
+}
 
 @font-face {
     font-family: 'Material Icons';

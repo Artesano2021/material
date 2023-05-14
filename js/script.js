@@ -1,2 +1,5 @@
-import {MDCBanner} from '@material/banner';
-const banner = new MDCBanner(document.querySelector('.mdc-banner'));
+bars = document.querySelector(".bars");
+bars.onclick = function() {
+    navbar = document.querySelector(".nav-bar");
+    navbar.classList.toggle("active")
+}

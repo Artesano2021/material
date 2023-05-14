@@ -2,92 +2,450 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartas</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./dist/material-components-web.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartas</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./dist/material-components-web.css">
+
+  <!--LIBRERIAS DE MATERIAL-->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/typography@0.3.0/dist/mdc.typography.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/button@0.45.0/dist/mdc.button.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@material/dialog@0.48.0/dist/mdc.dialog.min.css" />
 </head>
 
 <body>
-    <header>
-        <div class="bars">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <div class="logo">
-            <div class="logo-icon">
-                <img class="icon-nav"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Material_Design_Logo.svg/1200px-Google_Material_Design_Logo.svg.png">
-            </div>
-            <div class="logo-text">
-                <h1><a class="font-logo" href="./index.html"></a>MATERIAL</h1>
-            </div>
-        </div>
-
-        <nav class="nav-bar">
-            <ul class="lista-nav">
-                <li>
-                    <h3><a class="li-nav" href="./botones.html">Botones</a></h3>
-                </li>
-                <li>
-                    <h3><a class="li-nav" href="./cartas.html">Tarjetas</a></h3>
-                </li>
-                <li>
-                    <h3><a class="li-nav" href="./modales.html">Modales</a></h3>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="flex-container">
-
-        <div class="mdc-banner" role="banner">
-            <div class="mdc-banner__fixed">
-              <div class="mdc-banner__content"
-                   role="alertdialog"
-                   aria-live="assertive">
-                <div class="mdc-banner__graphic-text-wrapper">
-                  <div class="mdc-banner__text">
-                    There was a problem processing a transaction on your credit card.
-                  </div>
-                </div>
-                <div class="mdc-banner__actions">
-                  <button type="button" class="mdc-button mdc-banner__primary-action">
-                    <div class="mdc-button__ripple"></div>
-                    <div class="mdc-button__label">Fix it</div>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          
+  <header>
+    <div class="bars">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="logo">
+      <div class="logo-icon">
+        <img class="icon-nav"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Material_Design_Logo.svg/1200px-Google_Material_Design_Logo.svg.png">
+      </div>
+      <div class="logo-text">
+        <h1><a class="font-logo" href="./index.html"></a>MATERIAL</h1>
+      </div>
     </div>
 
-    <footer class="footer2">
-        <ul class="ul-footer">
-          <li><a class="li-footer" href="https://m2.material.io/design"><span class="material-icons">brush</span>Diseño</a></li>
-          <li><a class="li-footer"href="https://m2.material.io/components?platform=web"><span class="material-icons">grid_view</span>Componentes</a></li>
+    <nav class="nav-bar">
+      <ul class="lista-nav">
+        <li>
+          <h3><a class="li-nav" href="./botones.html">Botones</a></h3>
+        </li>
+        <li>
+          <h3><a class="li-nav" href="./cartas.html">Tarjetas</a></h3>
+        </li>
+        <li>
+          <h3><a class="li-nav" href="./modales.html">Modales</a></h3>
+        </li>
       </ul>
-  
-      <h1 class="h1-footer"><a class="mainTitle-footer" href="./index.html">MATERIAL</a></h1>
-  
-      <ul class="ul-footer">
-          <li><a class="li-footer" href="https://m2.material.io/develop"><span class="material-icons">work</span>Desarrollar</a></li>
-          <li><a class="li-footer" href="https://m2.material.io/resources"><span class="material-icons">source</span>Recursos</a></li>
-          <li><a class="li-footer" href="https://material.io/blog/"><span class="material-icons">menu_book</span>Blog</a></li>
-      </ul>
-      </footer>
+    </nav>
+  </header>
 
-    <script src="./js/script.js"></script>
+
+  <h2>Modales</h2>
+  <h3>Muestra:</h3>
+  <div class="flex-container">
+
+
+    <!-- al hacer click en este boton se abrira la Ventana modal -->
+    <a href="" data-modal="#modal" class="modal__trigger">Boton</a>
+
+    <!-- Ventana Modal -->
+    <div id="modal" class="modal modal__bg" role="dialog" aria-hidden="true">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <h1>Material Design es dinámico</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id dignissim elit. In hac habitasse platea
+            dictumst. Mauris ac acus ipsum. Aliquam sed felis eu enim maximus convallis eu sit amet dui. In leo magna,
+            facilisis tincidunt cursus et, ultrices feugiat leo. Curabitur bibendum dui euismod enim fermentum
+            scelerisque. Vestibulum sodales elit fringilla eros iaculis, in efficitur libero dignissim. Donec feugiat
+            quis augue vel pharetra.
+          </p>
+
+          <!-- Boton para cerrar la Ventana modal -->
+          <a href="" class="modal__close demo-close">
+            <svg class="" viewBox="0 0 24 24">
+              <path
+                d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+              <path d="M0 0h24v24h-24z" fill="none" />
+            </svg>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h3>Implementación:</h3>
+
+  <div class="implementacion">
+    <div class="html">
+      <div class="html-logo-div">
+        <img class="html-logo"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png">
+      </div>
+      <div class="imple-info">
+        <p>&lt;div id="modal" class="modal modal__bg" role="dialog" aria-hidden="true"></p>
+        <p>&lt;div class="modal__dialog"></p>
+        <p>&lt;div class="modal__content"></p>
+        <p>&lt;h1>Material Design es dinámico&lt;/h1></p>
+        <p>&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id dignissim elit. In hac habitasse
+          platea dictumst. Mauris ac acus ipsum. Aliquam sed felis eu enim maximus convallis eu sit amet dui. In leo
+          magna, facilisis tincidunt cursus et, ultrices feugiat leo. Curabitur bibendum dui euismod enim fermentum
+          scelerisque. Vestibulum sodales elit fringilla eros iaculis, in efficitur libero dignissim. Donec feugiat quis
+          augue vel pharetra.&lt;/p></p>
+        <p> &lt;a href="" class="modal__close demo-close"></p>
+        <p>&lt;svg class="" viewBox="0 0 24 24">
+          <path
+            d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z" />
+          &lt;path d="M0 0h24v24h-24z" fill="none"/>&lt;/svg>&lt;/a>
+        </p>
+        <p> &lt;/div></p>
+        <p>&lt;/div></p>
+        <p>&lt;/div></p>
+
+
+      </div>
+    </div>
+
+
+    <div class="css">
+      <div class="css-logo-div">
+        <img class="css-logo" src="https://cdn.freebiesupply.com/logos/large/2x/css-3-logo-png-transparent.png">
+      </div>
+      <div class="imple-info">
+        <b>.modal {</b>
+        <p>will-change: visibility, opacity;</p>
+        <p>display: -webkit-box;</p>
+        <p>display: -webkit-flex;</p>
+        <p>display: -ms-flexbox;</p>
+        <p>display: flex;</p>
+        <p>-webkit-box-align: center;</p>
+        <p>-webkit-align-items: center;</p>
+        <p>-ms-flex-align: center;</p>
+        <p>align-items: center;</p>
+        <p>-webkit-box-pack: center;</p>
+        <p>-webkit-justify-content: center;</p>
+        <p>-ms-flex-pack: center;</p>
+        <p>justify-content: center;</p>
+        <p>position: fixed;</p>
+        <p>top: 0;</p>
+        <p>left: 0;</p>
+        <p>right: 0;</p>
+        <p>bottom: 0;</p>
+        <p>overflow-y: auto;</p>
+        <p>overflow-x: hidden;</p>
+        <p>z-index: 1000;</p>
+        <p>visibility: hidden;</p>
+        <p>opacity: 0;</p>
+        <p>-webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);</p>
+        <p>transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);</p>
+        <p>}</p>
+        <br>
+        <b>.modal--active {</b>
+        <p></p>visibility: visible;</p>
+        <p></p>opacity: 1;</p>
+        <p>}</p>
+        <br>
+        <b>.modal--align-top {</b>
+        <p>-webkit-box-align: start;</p>
+        <p>-webkit-align-items: flex-start;</p>
+        <p>-ms-flex-align: start;</p>
+        <p>align-items: flex-start;</p>
+        <p>}</p>
+        <br>
+        <b>.modal__bg {</b>
+        <p> background: transparent;
+        <p>}
+          <br>
+          <b>.modal__dialog {</b>
+        <p>max-width: 600px;</p>
+        <p> padding: 1.2rem;</p>
+        <p> }</p>
+
+        <b> .modal__content {</b>
+        <p> will-change: transform, opacity;</p>
+        <p> position: relative;</p>
+        <p> padding: 2.4rem;</p>
+        <p> background: #fff;</p>
+        <p> background-clip: padding-box;</p>
+        <p> box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25);</p>
+        <p> opacity: 0;</p>
+        <p> -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);</p>
+        <p> transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);</p>
+        <p> }</p>
+        <br>
+        <b> .modal__content--active {</b>
+        <p> opacity: 1;</p>
+        <p>}</p>
+        <br>
+        <b> .modal__close {</b>
+        <p> z-index: 1100;</p>
+        <p> cursor: pointer;</p>
+        <p> }</p>
+        <br>
+        <b> .modal__trigger {</b>
+        <p> position: relative;</p>
+        <p> display: inline-block;</p>
+        <p> padding: 1.2rem 2.4rem;</p>
+        <p> color: #fff;</p>
+        <p> line-height: 1;</p>
+        <p> cursor: pointer;</p>
+        <p> background: #4C9BD6;</p>
+        <p> box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);</p>
+        <p> -webkit-tap-highlight-color: rgba(0, 0, 0, 0);</p>
+        <p> -webkit-user-select: none;</p>
+        <p> -moz-user-select: none;</p>
+        <p> -ms-user-select: none;</p>
+        <p> user-select: none;</p>
+        <p> -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);</p>
+        <p> transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);</p>
+        <p> }</p>
+        <br>
+        <b> .modal__trigger--active { </b>
+        <p> z-index: 10;</p>
+        <p> }</p>
+
+        <p> .modal__trigger:hover {</p>
+        <p> background: green;</p>
+        <p> }</p>
+        <br>
+        <b>#modal__temp {</b>
+        <p> will-change: transform, opacity;</p>
+        <p> position: absolute;</p>
+        <p> top: 0;</p>
+        <p> left: 0;</p>
+        <p> right: 0;</p>
+        <p> bottom: 0;</p>
+        <p> background: #DADDDE;</p>
+        <p> -webkit-transform: none;</p>
+        <p> transform: none;</p>
+        <p> opacity: 1;</p>
+        <p> -webkit-transition: opacity 0.1s ease-out, -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);</p>
+        <p> transition: opacity 0.1s ease-out, -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);</p>
+        <p> transition: opacity 0.1s ease-out, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);</p>
+        <p> transition: opacity 0.1s ease-out, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.5s
+          cubic-bezier(0.23, 1, 0.32, 1);</p>
+        <p> }</p>
+      </div>
+    </div>
+
+
+
+    <div class="js">
+      <div class="js-logo-div">
+        <img class="js-logo"
+          src="https://www.freepnglogos.com/uploads/javascript-png/png-javascript-badge-picture-8.png">
+      </div>
+      <div class="imple-info">
+        <p> var Modal = (function() {</p>
+        <p> var trigger = $qsa('.modal__trigger');</p> // Al hacer click activo la ventana modal
+        <p> var modals = $qsa('.modal');</p>
+        <p> var modalsbg = $qsa('.modal__bg');</p>
+        <p> var content = $qsa('.modal__content');</p>
+        <p> var closers = $qsa('.modal__close');</p>
+        <p> var w = window;</p>
+        <p> var isOpen = false;</p>
+        <p> var contentDelay = 400; // el tiempo duracion antes de cargar el cotenido de la ventana modal
+        <p> var len = trigger.length;</p>
+        <br>
+
+        <p> function $qsa(el) {</p>
+        <p> return document.querySelectorAll(el);</p>
+        <p> }</p>
+        <br>
+        <p> var getId = function(event) {</p>
+        <br>
+        <p> event.preventDefault();</p>
+        <p> var self = this;</p>
+        // obtengo el valor y el atributo del botón
+        <p> var modalId = self.dataset.modal;</p>
+        <p> var len = modalId.length;</p>
+        // remuevo el char # o numeral
+        <p> var modalIdTrimmed = modalId.substring(1, len);</p>
+        <br>
+        <p> var modal = document.getElementById(modalIdTrimmed);</p>
+        <br>
+        <p> makeDiv(self, modal);</p>
+        <p> };</p>
+        <br>
+        <p> var makeDiv = function(self, modal) {</p>
+        <br>
+        <p> var fakediv = document.getElementById('modal__temp');</p>
+        <br>
+
+        <p> if (fakediv === null) {</p>
+        <p> var div = document.createElement('div');</p>
+        <p> div.id = 'modal__temp';</p>
+        <p> self.appendChild(div);</p>
+        <p> moveTrig(self, modal, div);</p>
+        <p> }</p>
+        <p> };</p>
+        <br>
+        <p>var moveTrig = function(trig, modal, div) {</p>
+        <p> var trigProps = trig.getBoundingClientRect();</p>
+        <p> var m = modal;</p>
+        <p> var mProps = m.querySelector('.modal__content').getBoundingClientRect();</p>
+        <p> var transX, transY, scaleX, scaleY;</p>
+        <p> var xc = w.innerWidth / 2;</p>
+        <p> var yc = w.innerHeight / 2;</p>
+        <br>
+
+        <p> trig.classList.add('modal__trigger--active');</p>
+        <br>
+        <p> scaleX = mProps.width / trigProps.width;</p>
+        <p> scaleY = mProps.height / trigProps.height;</p>
+        <br>
+        <p> scaleX = scaleX.toFixed(3);</p>
+        <p> scaleY = scaleY.toFixed(3);</p>
+        <br>
+        <p></p> transX = Math.round(xc - trigProps.left - trigProps.width / 2);
+        <p> transY = Math.round(yc - trigProps.top - trigProps.height / 2);
+          <br>
+        <p> if (m.classList.contains('modal--align-top')) {
+        <p> transY = Math.round(mProps.height / 2 + mProps.top - trigProps.top - trigProps.height / 2);
+        <p> }
+          <br>
+        <p> trig.style.transform = 'translate(' + transX + 'px, ' + transY + 'px)';</p>
+        <p> trig.style.webkitTransform = 'translate(' + transX + 'px, ' + transY + 'px)';</p>
+        <p> div.style.transform = 'scale(' + scaleX + ',' + scaleY + ')';</p>
+        <p> div.style.webkitTransform = 'scale(' + scaleX + ',' + scaleY + ')';</p>
+        <br>
+
+        <p> window.setTimeout(function() {</p>
+        <p> window.requestAnimationFrame(function() {</p>
+        <p> open(m, div);</p>
+        <p> });</p>
+        <p> }, contentDelay);</p>
+        <br>
+        <p> };</p>
+        <br>
+        <p> var open = function(m, div) {</p>
+        <br>
+        <p> if (!isOpen) {</p>
+        <br>
+        <p> var content = m.querySelector('.modal__content');</p>
+        <br>
+        <p> m.classList.add('modal--active');</p>
+        <br>
+        <p> content.classList.add('modal__content--active');</p>
+        <br>
+        <p> content.addEventListener('transitionend', hideDiv, false);</p>
+        <br>
+        <p> isOpen = true;</p>
+        <p> }</p>
+        <br>
+        <p> function hideDiv() { </p>
+        <p> div.style.opacity = '0';</p>
+        <p> content.removeEventListener('transitionend', hideDiv, false);</p>
+        <p> }</p>
+        <p> };</p>
+        <br>
+        // Cerramos la ventana modal
+        <p> var close = function(event) {</p>
+        <br>
+        <p> event.preventDefault();</p>
+        <p> event.stopImmediatePropagation();</p>
+        <br>
+        <p> var target = event.target;</p>
+        <p> var div = document.getElementById('modal__temp');</p>
+        <br>
+
+        <p> if (isOpen && target.classList.contains('modal__bg') || target.classList.contains('modal__close')) {</p>
+        <br>
+        <p> div.style.opacity = '1';</p>
+        <p> div.removeAttribute('style');</p>
+        <br>
+        <p> for (var i = 0; i < len; i++) {</p>
+            <p> modals[i].classList.remove('modal--active');</p>
+            <p> content[i].classList.remove('modal__content--active');</p>
+            <p> trigger[i].style.transform = 'none';</p>
+            <p> trigger[i].style.webkitTransform = 'none';</p>
+            <p> trigger[i].classList.remove('modal__trigger--active');</p>
+            <p> }</p>
+            <br>
+            <p> div.addEventListener('transitionend', removeDiv, false);</p>
+            <br>
+            <p> isOpen = false;</p>
+            <br>
+            <p> }</p>
+            <br>
+            <p> function removeDiv() {</p>
+            <p> setTimeout(function() {</p>
+            <p> window.requestAnimationFrame(function() {</p>
+            <p> div.remove();</p>
+            <p> });</p>
+            <p> }, contentDelay - 50);</p>
+            <p> }</p>
+            <br>
+            <p> };</p>
+            <br>
+            <p> var bindActions = function() {</p>
+            <p> for (var i = 0; i < len; i++) {</p>
+                <p> trigger[i].addEventListener('click', getId, false);</p>
+                <p> closers[i].addEventListener('click', close, false);</p>
+                <p> modalsbg[i].addEventListener('click', close, false);</p>
+                <p> }</p>
+                <p> };</p>
+                <br>
+                <p> var init = function() {</p>
+                <p> bindActions();</p>
+                <p> };</p>
+                <br>
+                <p> return {</p>
+                <p> init: init</p>
+                <p> }; </p>
+                <br>
+                <p> }()); </p>
+                <br>
+                <p> Modal.init();</p>
+      </div>
+    </div>
+
+
+  </div>
+
+  <footer class="footer">
+    <ul class="ul-footer">
+      <li><a class="li-footer" href="https://m2.material.io/design"><span class="material-icons">brush</span>Diseño</a>
+      </li>
+      <li><a class="li-footer" href="https://m2.material.io/components?platform=web"><span
+            class="material-icons">grid_view</span>Componentes</a></li>
+    </ul>
+
+    <h1 class="h1-footer"><a class="mainTitle-footer" href="./index.html">MATERIAL</a></h1>
+
+    <ul class="ul-footer">
+      <li><a class="li-footer" href="https://m2.material.io/develop"><span
+            class="material-icons">work</span>Desarrollar</a></li>
+      <li><a class="li-footer" href="https://m2.material.io/resources"><span
+            class="material-icons">source</span>Recursos</a></li>
+      <li><a class="li-footer" href="https://material.io/blog/"><span class="material-icons">menu_book</span>Blog</a>
+      </li>
+    </ul>
+  </footer>
+
+
+  <script src="./js/modal.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@material/dialog@0.48.0/dist/mdc.dialog.min.js"></script>
+
 </body>
 
 </html>
